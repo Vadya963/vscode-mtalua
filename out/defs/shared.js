@@ -4045,6 +4045,42 @@ tmpDef.argDescs = {};
 tmpDef.scriptSide = defs_1.ScriptSide.Shared;
 exports.SharedDefinitions.push(tmpDef);
 
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "getColPolygonPoints";
+tmpDef.description = "This function is used to get all bound points in a colshape polygon.";
+tmpDef.returnType = "table";
+tmpDef.args = ["colshape shape"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Shared;
+exports.SharedDefinitions.push(tmpDef);
+
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "getColPolygonPointPosition";
+tmpDef.description = "This function is used to get the position of a bound point in a colshape polygon.";
+tmpDef.returnType = "Vector2";
+tmpDef.args = ["colshape shape"," int index"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Shared;
+exports.SharedDefinitions.push(tmpDef);
+
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "removeColPolygonPoint";
+tmpDef.description = "This function is used to remove a point from an existing colshape polygon.";
+tmpDef.returnType = "bool";
+tmpDef.args = ["colshape shape"," int index"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Shared;
+exports.SharedDefinitions.push(tmpDef);
+
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "setColPolygonPointPosition";
+tmpDef.description = "This function is used to set the position of a bound point in a colshape polygon.";
+tmpDef.returnType = "bool";
+tmpDef.args = ["colshape shape"," int index"," float fX"," float fY"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Shared;
+exports.SharedDefinitions.push(tmpDef);
+
 var tmpModuleDef = new defs_1.LuaClass("utf8", "");
 tmpModuleDef.methods.push(new defs_1.LuaMethod("title", "", [], {}, ""));
 tmpModuleDef.methods.push(new defs_1.LuaMethod("width", "", [], {}, ""));
