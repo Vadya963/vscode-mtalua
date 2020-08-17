@@ -984,7 +984,7 @@ tmpDef = new defs_1.MTAFunction;
 tmpDef.label = "unbindKey";
 tmpDef.description = "Removes an existing key bind from the specified player.This function binds the player's F1 key to a function goMoo which outputs a chat message when pressed. The key is then unbound so that it can effectively only be used once per life.";
 tmpDef.returnType = "bool";
-tmpDef.args = [" player thePlayer", "string key", "string keyState", "string command "];
+tmpDef.args = ["player thePlayer"," string key ["," string keyState"," function handler ]"];
 tmpDef.argDescs = {};
 tmpDef.scriptSide = defs_1.ScriptSide.Shared;
 exports.SharedDefinitions.push(tmpDef);
