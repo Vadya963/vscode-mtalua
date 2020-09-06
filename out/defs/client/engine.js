@@ -274,4 +274,13 @@ tmpDef.argDescs = {};
 tmpDef.scriptSide = defs_1.ScriptSide.Client;
 exports.EngineFunctionDefinitions.push(tmpDef);
 
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "engineResetModelLODDistance";
+tmpDef.description = "This function resets the LOD distance for an object / model ID.";
+tmpDef.returnType = "bool";
+tmpDef.args = ["int model"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Client;
+exports.EngineFunctionDefinitions.push(tmpDef);
+
 //# sourceMappingURL=engine.js.map
