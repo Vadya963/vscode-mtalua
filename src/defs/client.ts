@@ -825,8 +825,8 @@ tmpDef.scriptSide = ScriptSide.Client;
 ClientDefinitions.push(tmpDef);
 
 tmpDef = new MTAFunction;
-tmpDef.label = "localPlayer";
-tmpDef.description = "returns the player element of the local player.";
+tmpDef.label = "getLocalPlayer";
+tmpDef.description = "This function gets the player element of the client running the current script. You can use the predefined variable localPlayer instead of typing getLocalPlayer()";
 tmpDef.returnType = "player";
 tmpDef.args = [""];
 tmpDef.argDescs = {};

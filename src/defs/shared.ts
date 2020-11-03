@@ -4561,6 +4561,16 @@ tmpDef.argDescs = {};
 tmpDef.scriptSide = ScriptSide.Shared;
 SharedDefinitions.push(tmpDef);
 
+//1.5.8
+tmpDef = new MTAFunction;
+tmpDef.label = "setVehicleVariant";
+tmpDef.description = "This function sets the variant of a specified vehicle. In GTA SA some vehicles are different for example the labelling on trucks or the contents of a pick-up truck and the varying types of a motor bike.";
+tmpDef.returnType = "bool";
+tmpDef.args = ["vehicle theVehicle [", "int variant1", "int variant2 ]"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = ScriptSide.Shared;
+ServerDefinitions.push(tmpDef);
+
 let tmpModuleDef = new LuaClass("utf8", "");
 tmpModuleDef.methods.push(new LuaMethod("title", "", [], {}, ""));
 tmpModuleDef.methods.push(new LuaMethod("width", "", [], {}, ""));
