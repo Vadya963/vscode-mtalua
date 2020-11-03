@@ -4569,7 +4569,7 @@ tmpDef.returnType = "bool";
 tmpDef.args = ["vehicle theVehicle [", "int variant1", "int variant2 ]"];
 tmpDef.argDescs = {};
 tmpDef.scriptSide = ScriptSide.Shared;
-ServerDefinitions.push(tmpDef);
+SharedDefinitions.push(tmpDef);
 
 let tmpModuleDef = new LuaClass("utf8", "");
 tmpModuleDef.methods.push(new LuaMethod("title", "", [], {}, ""));
