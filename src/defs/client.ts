@@ -2052,3 +2052,21 @@ tmpDef.args = ["int level"];
 tmpDef.argDescs = {};
 tmpDef.scriptSide = ScriptSide.Client;
 ClientDefinitions.push(tmpDef);
+
+tmpDef = new MTAFunction;
+tmpDef.label = "setColorFilter";
+tmpDef.description = "This function is used to override the default color filtering values.";
+tmpDef.returnType = "bool";
+tmpDef.args = ["int aRed"," int aGreen"," int aBlue"," int aAlpha"," int bRed"," int bGreen"," int bBlue"," int bAlpha"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = ScriptSide.Client;
+ClientDefinitions.push(tmpDef);
+
+tmpDef = new MTAFunction;
+tmpDef.label = "resetColorFilter";
+tmpDef.description = "This function is used to reset the color filtering to its default values.";
+tmpDef.returnType = "bool";
+tmpDef.args = [""];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = ScriptSide.Client;
+ClientDefinitions.push(tmpDef);

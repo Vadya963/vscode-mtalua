@@ -4140,7 +4140,7 @@ tmpDef = new MTAFunction;
 tmpDef.label = "setWaterLevel";
 tmpDef.description = "Sets the height of some or all the water in the game world.";
 tmpDef.returnType = "bool";
-tmpDef.args = ["[water theWater,] float level"];
+tmpDef.args = ["float level ["," bool includeWaterFeatures = true"," bool includeWaterElements = true"," bool includeWorldSea = true"," bool includeOutsideWorld = false ]"];
 tmpDef.argDescs = {};
 tmpDef.scriptSide = ScriptSide.Shared;
 SharedDefinitions.push(tmpDef);
