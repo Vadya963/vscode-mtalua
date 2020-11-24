@@ -246,7 +246,7 @@ tmpDef = new MTAFunction;
 tmpDef.label = "engineRequestModel";
 tmpDef.description = "This function is used to assign the next available model ID to a certain element type. After release 1.5.8-20716 this function supports 'vehicle' and 'object' too.";
 tmpDef.returnType = "int";
-tmpDef.args = ["str elementType"];
+tmpDef.args = ["str elementType ["," int parentID ]"];
 tmpDef.argDescs = {};
 tmpDef.scriptSide = ScriptSide.Client;
 EngineFunctionDefinitions.push(tmpDef);
