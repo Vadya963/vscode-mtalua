@@ -283,4 +283,14 @@ tmpDef.argDescs = {};
 tmpDef.scriptSide = defs_1.ScriptSide.Client;
 exports.EngineFunctionDefinitions.push(tmpDef);
 
+//1.5.8
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "engineRestreamWorld";
+tmpDef.description = "This function re-streams everything in world.";
+tmpDef.returnType = "bool";
+tmpDef.args = [""];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Client;
+exports.EngineFunctionDefinitions.push(tmpDef);
+
 //# sourceMappingURL=engine.js.map

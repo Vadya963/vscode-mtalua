@@ -304,3 +304,13 @@ tmpDef.args = ["int model"];
 tmpDef.argDescs = {};
 tmpDef.scriptSide = ScriptSide.Client;
 EngineFunctionDefinitions.push(tmpDef);
+
+//1.5.8
+tmpDef = new MTAFunction;
+tmpDef.label = "engineRestreamWorld";
+tmpDef.description = "This function re-streams everything in world.";
+tmpDef.returnType = "bool";
+tmpDef.args = [""];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = ScriptSide.Client;
+EngineFunctionDefinitions.push(tmpDef);
