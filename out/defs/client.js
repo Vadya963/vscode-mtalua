@@ -758,7 +758,7 @@ tmpDef = new defs_1.MTAFunction;
 tmpDef.label = "setAnalogControlState";
 tmpDef.description = "This sets the analog control state of a control for the local player.";
 tmpDef.returnType = "bool";
-tmpDef.args = ["string controlName [", "float state]"];
+tmpDef.args = ["string control ["," float state"," bool forceOverrideNextFrame = false ]"];
 tmpDef.argDescs = {};
 tmpDef.scriptSide = defs_1.ScriptSide.Client;
 exports.ClientDefinitions.push(tmpDef);
