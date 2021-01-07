@@ -384,4 +384,13 @@ tmpDef.argDescs = {};
 tmpDef.scriptSide = defs_1.ScriptSide.Client;
 exports.VehicleFunctionDefinitions.push(tmpDef);
 
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "getVehicleWheelFrictionState";
+tmpDef.description = "This function returns the current wheel friction state of the vehicle.";
+tmpDef.returnType = "int";
+tmpDef.args = ["vehicle theVehicle"," int wheel"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Client;
+exports.VehicleFunctionDefinitions.push(tmpDef);
+
 //# sourceMappingURL=vehicle.js.map
