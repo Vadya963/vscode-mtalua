@@ -1950,4 +1950,13 @@ tmpDef.argDescs = {};
 tmpDef.scriptSide = defs_1.ScriptSide.Client;
 exports.ClientDefinitions.push(tmpDef);
 
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "isBrowserRenderingPaused";
+tmpDef.description = "This function gets the rendering state of a browser.";
+tmpDef.returnType = "bool";
+tmpDef.args = ["browser webBrowser"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Client;
+exports.ClientDefinitions.push(tmpDef);
+
 //# sourceMappingURL=client.js.map
