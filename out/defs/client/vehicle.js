@@ -348,6 +348,7 @@ tmpDef.argDescs = {};
 tmpDef.scriptSide = defs_1.ScriptSide.Client;
 exports.VehicleFunctionDefinitions.push(tmpDef);
 
+//1.5.8
 tmpDef = new defs_1.MTAFunction;
 tmpDef.label = "getVehicleModelWheelSize";
 tmpDef.description = "This function gets the size of a group of wheels for a vehicle model.";
@@ -389,6 +390,42 @@ tmpDef.label = "getVehicleWheelFrictionState";
 tmpDef.description = "This function returns the current wheel friction state of the vehicle.";
 tmpDef.returnType = "int";
 tmpDef.args = ["vehicle theVehicle"," int wheel"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Client;
+exports.VehicleFunctionDefinitions.push(tmpDef);
+
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "getVehicleDummyPosition";
+tmpDef.description = "This function returns the position of the dummy for the given vehicle.";
+tmpDef.returnType = "float, float, float";
+tmpDef.args = ["vehicle theVehicle"," string dummy"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Client;
+exports.VehicleFunctionDefinitions.push(tmpDef);
+
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "getVehicleModelDummyDefaultPosition";
+tmpDef.description = "This function gets the default position of the dummies contained in a vehicle model.";
+tmpDef.returnType = "float, float, float";
+tmpDef.args = ["int modelID"," string dummy"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Client;
+exports.VehicleFunctionDefinitions.push(tmpDef);
+
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "resetVehicleDummyPositions";
+tmpDef.description = "This function resets the vehicle dependent dummy positions to the vehicle's current model dummy positions.";
+tmpDef.returnType = "bool";
+tmpDef.args = ["vehicle theVehicle"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Client;
+exports.VehicleFunctionDefinitions.push(tmpDef);
+
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "setVehicleDummyPosition";
+tmpDef.description = "This function sets the position of the dummy for the given vehicle.";
+tmpDef.returnType = "bool";
+tmpDef.args = ["vehicle theVehicle"," string dummy"," float x"," float y"," float z"];
 tmpDef.argDescs = {};
 tmpDef.scriptSide = defs_1.ScriptSide.Client;
 exports.VehicleFunctionDefinitions.push(tmpDef);

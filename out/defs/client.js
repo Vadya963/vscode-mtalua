@@ -1941,4 +1941,13 @@ tmpDef.argDescs = {};
 tmpDef.scriptSide = defs_1.ScriptSide.Client;
 exports.ClientDefinitions.push(tmpDef);
 
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "isObjectMoving";
+tmpDef.description = "This function checks if an object is moving.";
+tmpDef.returnType = "bool";
+tmpDef.args = ["object theObject"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Client;
+exports.ClientDefinitions.push(tmpDef);
+
 //# sourceMappingURL=client.js.map

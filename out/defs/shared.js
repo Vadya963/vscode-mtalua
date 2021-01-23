@@ -4091,6 +4091,24 @@ tmpDef.argDescs = {};
 tmpDef.scriptSide = defs_1.ScriptSide.Shared;
 exports.SharedDefinitions.push(tmpDef);
 
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "isTransferBoxVisible";
+tmpDef.description = "Determines if the transfer box should be visible.";
+tmpDef.returnType = "bool";
+tmpDef.args = [""];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Shared;
+exports.SharedDefinitions.push(tmpDef);
+
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "setTransferBoxVisible";
+tmpDef.description = "Determines whether or not the transferbox should appear to players.";
+tmpDef.returnType = "bool";
+tmpDef.args = ["bool visible"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Shared;
+exports.SharedDefinitions.push(tmpDef);
+
 var tmpModuleDef = new defs_1.LuaClass("utf8", "");
 tmpModuleDef.methods.push(new defs_1.LuaMethod("title", "", [], {}, ""));
 tmpModuleDef.methods.push(new defs_1.LuaMethod("width", "", [], {}, ""));
