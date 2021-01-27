@@ -86,7 +86,7 @@ exports.PedFunctionDefinitions.push(tmpDef);
 tmpDef = new defs_1.MTAFunction;
 tmpDef.label = "getPedAnimation";
 tmpDef.description = "Gets the animation of a player or ped that was set using setPedAnimation.";
-tmpDef.returnType = "string string";
+tmpDef.returnType = "string, string, int, int, bool, bool, bool, int, bool";
 tmpDef.args = ["ped thePed"];
 tmpDef.argDescs = {};
 tmpDef.scriptSide = defs_1.ScriptSide.Client;
