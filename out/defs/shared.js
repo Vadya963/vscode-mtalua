@@ -4121,7 +4121,7 @@ exports.SharedDefinitions.push(tmpDef);
 tmpDef = new defs_1.MTAFunction;
 tmpDef.label = "getColPolygonHeight";
 tmpDef.description = "This function is used to get the height of an existing colshape polygon. By default, a colshape polygon is infinitely tall.";
-tmpDef.returnType = "table";
+tmpDef.returnType = "float, float";
 tmpDef.args = ["colshape shape"];
 tmpDef.argDescs = {};
 tmpDef.scriptSide = defs_1.ScriptSide.Shared;
