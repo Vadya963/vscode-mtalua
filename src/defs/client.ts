@@ -1474,8 +1474,8 @@ ClientDefinitions.push(tmpDef);
 
 tmpDef = new MTAFunction;
 tmpDef.label = "getCameraViewMode";
-tmpDef.description = "This function allows you to get the camera's view mode. This indicates at what distance the camera will follow the player.";
-tmpDef.returnType = "int";
+tmpDef.description = "This function allows you to get the camera's view mode. This indicates at what distance the camera will follow the player. Now you can get the camera mode when the player is not inside a vehicle.";
+tmpDef.returnType = "int, int";
 tmpDef.args = [""];
 tmpDef.argDescs = {};
 tmpDef.scriptSide = ScriptSide.Client;
@@ -1510,9 +1510,9 @@ ClientDefinitions.push(tmpDef);
 
 tmpDef = new MTAFunction;
 tmpDef.label = "setCameraViewMode";
-tmpDef.description = "This function allows you to set the camera's view mode if you are inside a vehicle. This indicates at what distance the camera will follow the player.";
+tmpDef.description = "This function allows you to set the camera's view mode if you are inside a vehicle. This indicates at what distance the camera will follow the player. Now you can change the camera mode when the player is not inside a vehicle.";
 tmpDef.returnType = "bool";
-tmpDef.args = ["int viewMode"];
+tmpDef.args = ["int vehicleCameraMode ["," int pedCameraMode ]"];
 tmpDef.argDescs = {};
 tmpDef.scriptSide = ScriptSide.Client;
 ClientDefinitions.push(tmpDef);
