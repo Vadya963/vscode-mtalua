@@ -1454,7 +1454,7 @@ tmpDef = new defs_1.MTAFunction;
 tmpDef.label = "shutdown";
 tmpDef.description = "This function shuts down the server. ";
 tmpDef.returnType = "bool";
-tmpDef.args = ["string reason"];
+tmpDef.args = ["[ string reason = 'No reason specified'"," number exitCode = 0 ]"];
 tmpDef.argDescs = {};
 tmpDef.scriptSide = defs_1.ScriptSide.Server;
 exports.ServerDefinitions.push(tmpDef);
