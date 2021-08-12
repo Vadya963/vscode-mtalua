@@ -1959,4 +1959,22 @@ tmpDef.argDescs = {};
 tmpDef.scriptSide = defs_1.ScriptSide.Client;
 exports.ClientDefinitions.push(tmpDef);
 
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "setSoundEffectParameter";
+tmpDef.description = "This function sets the parameter of a sound effect.";
+tmpDef.returnType = "bool";
+tmpDef.args = ["element sound"," string effectName"," string effectParam"," var paramValue"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Client;
+exports.ClientDefinitions.push(tmpDef);
+
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "getSoundEffectParameters";
+tmpDef.description = "This function gets the parameters of a sound effect.";
+tmpDef.returnType = "table";
+tmpDef.args = ["element sound"," string effectName"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Client;
+exports.ClientDefinitions.push(tmpDef);
+
 //# sourceMappingURL=client.js.map

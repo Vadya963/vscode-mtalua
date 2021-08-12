@@ -2179,3 +2179,21 @@ tmpDef.args = ["browser webBrowser"];
 tmpDef.argDescs = {};
 tmpDef.scriptSide = ScriptSide.Client;
 ClientDefinitions.push(tmpDef);
+
+tmpDef = new MTAFunction;
+tmpDef.label = "setSoundEffectParameter";
+tmpDef.description = "This function sets the parameter of a sound effect.";
+tmpDef.returnType = "bool";
+tmpDef.args = ["element sound"," string effectName"," string effectParam"," var paramValue"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = ScriptSide.Client;
+ClientDefinitions.push(tmpDef);
+
+tmpDef = new MTAFunction;
+tmpDef.label = "getSoundEffectParameters";
+tmpDef.description = "This function gets the parameters of a sound effect.";
+tmpDef.returnType = "table";
+tmpDef.args = ["element sound"," string effectName"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = ScriptSide.Client;
+ClientDefinitions.push(tmpDef);
