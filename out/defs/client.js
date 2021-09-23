@@ -1438,7 +1438,7 @@ tmpDef = new defs_1.MTAFunction;
 tmpDef.label = "getWaterLevel";
 tmpDef.description = "This function allows you to retrieve the water level from a certain location. The water level is 0 in most places though it can vary (e.g. it's higher near the dam).";
 tmpDef.returnType = "float";
-tmpDef.args = ["float posX", "float posY", "float posZ [ ", "bool bCheckWaves = false ]"];
+tmpDef.args = ["float posX", "float posY", "float posZ [ ", "bool ignoreDistanceToWaterThreshold = false ]"];
 tmpDef.argDescs = {};
 tmpDef.scriptSide = defs_1.ScriptSide.Client;
 exports.ClientDefinitions.push(tmpDef);
