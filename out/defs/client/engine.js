@@ -311,4 +311,22 @@ tmpDef.argDescs = {};
 tmpDef.scriptSide = defs_1.ScriptSide.Client;
 exports.EngineFunctionDefinitions.push(tmpDef);
 
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "engineStreamingFreeUpMemory";
+tmpDef.description = "This function frees up the streaming RAM memory.";
+tmpDef.returnType = "bool";
+tmpDef.args = ["int bytes"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Client;
+exports.EngineFunctionDefinitions.push(tmpDef);
+
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "engineStreamingGetUsedMemory";
+tmpDef.description = "This function gets the amount of memory (in bytes) used by the GTA streamer.";
+tmpDef.returnType = "int";
+tmpDef.args = [""];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Client;
+exports.EngineFunctionDefinitions.push(tmpDef);
+
 //# sourceMappingURL=engine.js.map
