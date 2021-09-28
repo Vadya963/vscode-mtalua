@@ -2040,4 +2040,49 @@ tmpDef.argDescs = {};
 tmpDef.scriptSide = defs_1.ScriptSide.Client;
 exports.ClientDefinitions.push(tmpDef);
 
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "svgCreate";
+tmpDef.description = "Creates an svg from size (blank document), filepath or raw data.";
+tmpDef.returnType = "svg";
+tmpDef.args = ["int width"," int height ["," string pathOrRawdata"," function callback ( bool didLoad ) ]"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Client;
+exports.ClientDefinitions.push(tmpDef);
+
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "svgGetDocumentXML";
+tmpDef.description = "Gets the underlying XML document from an SVG element.";
+tmpDef.returnType = "xmlnode";
+tmpDef.args = ["svg svgElement"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Client;
+exports.ClientDefinitions.push(tmpDef);
+
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "svgGetSize";
+tmpDef.description = "Gets the underlying XML document from an SVG element.";
+tmpDef.returnType = "int, int";
+tmpDef.args = ["svg svgElement"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Client;
+exports.ClientDefinitions.push(tmpDef);
+
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "svgSetDocumentXML";
+tmpDef.description = "Sets the underlying XML document of an SVG element.";
+tmpDef.returnType = "bool";
+tmpDef.args = ["svg svgElement"," xmlnode xmlDocument ["," function callback ( bool didLoad ) ]"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Client;
+exports.ClientDefinitions.push(tmpDef);
+
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "svgSetSize";
+tmpDef.description = "Sets the underlying XML document from an SVG element.";
+tmpDef.returnType = "bool";
+tmpDef.args = ["svg svgElement"," int width"," int height ["," function callback ( bool didLoad ) ]"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Client;
+exports.ClientDefinitions.push(tmpDef);
+
 //# sourceMappingURL=client.js.map
