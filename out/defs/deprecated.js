@@ -1065,4 +1065,15 @@ tmpDef.argDescs = {};
 tmpDef.scriptSide = defs_1.ScriptSide.Shared;
 tmpDef.deprecated = true;
 exports.DeprecatedDefinitions.push(tmpDef);
+
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "setVehicleDirtLevel";
+tmpDef.description = "Function has been disabled.";
+tmpDef.returnType = "bool";
+tmpDef.args = ["vehicle theVehicle"," int dirtLevel"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Shared;
+tmpDef.deprecated = true;
+exports.DeprecatedDefinitions.push(tmpDef);
+
 //# sourceMappingURL=deprecated.js.map
