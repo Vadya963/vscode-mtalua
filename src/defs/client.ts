@@ -2332,3 +2332,66 @@ tmpDef.args = ["svg svgElement"," function / bool callback"];
 tmpDef.argDescs = {};
 tmpDef.scriptSide = ScriptSide.Client;
 ClientDefinitions.push(tmpDef);
+
+tmpDef = new MTAFunction;
+tmpDef.label = "setCoronaReflectionsEnabled";
+tmpDef.description = "This function sets visibility of corona reflections.";
+tmpDef.returnType = "bool";
+tmpDef.args = ["int enabled"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = ScriptSide.Client;
+ClientDefinitions.push(tmpDef);
+
+tmpDef = new MTAFunction;
+tmpDef.label = "resetCoronaReflectionsEnabled";
+tmpDef.description = "This function resets visibility of corona reflections. Default value depends on client setting. If client has enabled corona rain reflections in video options, value will be reset to 1, otherwise to 0. You can check value of this option using dxGetStatus (SettingCoronaReflections).";
+tmpDef.returnType = "bool";
+tmpDef.args = [""];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = ScriptSide.Client;
+ClientDefinitions.push(tmpDef);
+
+tmpDef = new MTAFunction;
+tmpDef.label = "getCoronaReflectionsEnabled";
+tmpDef.description = "This function gets visibility of corona reflections.";
+tmpDef.returnType = "int";
+tmpDef.args = [""];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = ScriptSide.Client;
+ClientDefinitions.push(tmpDef);
+
+tmpDef = new MTAFunction;
+tmpDef.label = "setCoronaReflectionEnabled";
+tmpDef.description = "This function sets visibility of corona reflection.";
+tmpDef.returnType = "bool";
+tmpDef.args = ["marker theMarker"," bool enabled"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = ScriptSide.Client;
+ClientDefinitions.push(tmpDef);
+
+tmpDef = new MTAFunction;
+tmpDef.label = "isCoronaReflectionEnabled";
+tmpDef.description = "This function gets visibility of corona reflection.";
+tmpDef.returnType = "bool";
+tmpDef.args = ["marker theMarker"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = ScriptSide.Client;
+ClientDefinitions.push(tmpDef);
+
+tmpDef = new MTAFunction;
+tmpDef.label = "isCapsLockEnabled";
+tmpDef.description = "Returns true if caps lock is toggled (on), false otherwise.";
+tmpDef.returnType = "bool";
+tmpDef.args = [""];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = ScriptSide.Client;
+ClientDefinitions.push(tmpDef);
+
+tmpDef = new MTAFunction;
+tmpDef.label = "getElementLighting";
+tmpDef.description = "This function returns the lighting value for the specified element. This can be a player, ped, vehicle, object.";
+tmpDef.returnType = "float";
+tmpDef.args = ["element theElement"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = ScriptSide.Client;
+ClientDefinitions.push(tmpDef);

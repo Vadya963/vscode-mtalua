@@ -4607,6 +4607,15 @@ tmpDef.argDescs = {};
 tmpDef.scriptSide = ScriptSide.Shared;
 SharedDefinitions.push(tmpDef);
 
+tmpDef = new MTAFunction;
+tmpDef.label = "generateKeyPair";
+tmpDef.description = "This function creates a new public key and private key for encrypting data.";
+tmpDef.returnType = "string, string";
+tmpDef.args = ["string algorithm"," table options ["," function callback ]"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = ScriptSide.Shared;
+SharedDefinitions.push(tmpDef);
+
 let tmpModuleDef = new LuaClass("utf8", "");
 tmpModuleDef.methods.push(new LuaMethod("title", "", [], {}, ""));
 tmpModuleDef.methods.push(new LuaMethod("width", "", [], {}, ""));
