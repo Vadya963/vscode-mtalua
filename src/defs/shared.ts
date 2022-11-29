@@ -4616,6 +4616,15 @@ tmpDef.argDescs = {};
 tmpDef.scriptSide = ScriptSide.Shared;
 SharedDefinitions.push(tmpDef);
 
+tmpDef = new MTAFunction;
+tmpDef.label = "getProcessMemoryStats";
+tmpDef.description = "This function returns a breakdown of the process memory usage. The reported numbers are always byte units and these numbers can be inaccurate.";
+tmpDef.returnType = "table|nil";
+tmpDef.args = [""];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = ScriptSide.Shared;
+SharedDefinitions.push(tmpDef);
+
 let tmpModuleDef = new LuaClass("utf8", "");
 tmpModuleDef.methods.push(new LuaMethod("title", "", [], {}, ""));
 tmpModuleDef.methods.push(new LuaMethod("width", "", [], {}, ""));

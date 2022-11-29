@@ -4136,6 +4136,15 @@ tmpDef.argDescs = {};
 tmpDef.scriptSide = defs_1.ScriptSide.Shared;
 exports.SharedDefinitions.push(tmpDef);
 
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "getProcessMemoryStats";
+tmpDef.description = "This function returns a breakdown of the process memory usage. The reported numbers are always byte units and these numbers can be inaccurate.";
+tmpDef.returnType = "table|nil";
+tmpDef.args = [""];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Shared;
+exports.SharedDefinitions.push(tmpDef);
+
 var tmpModuleDef = new defs_1.LuaClass("utf8", "");
 tmpModuleDef.methods.push(new defs_1.LuaMethod("title", "", [], {}, ""));
 tmpModuleDef.methods.push(new defs_1.LuaMethod("width", "", [], {}, ""));
