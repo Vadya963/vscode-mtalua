@@ -2175,4 +2175,31 @@ tmpDef.argDescs = {};
 tmpDef.scriptSide = defs_1.ScriptSide.Client;
 exports.ClientDefinitions.push(tmpDef);
 
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "isMTAWindowFocused";
+tmpDef.description = "This function returns whether the MTA window is focused or not.";
+tmpDef.returnType = "bool";
+tmpDef.args = [""];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Client;
+exports.ClientDefinitions.push(tmpDef);
+
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "getChatboxCharacterLimit";
+tmpDef.description = "Gets the current maximum amount of characters that can be input via chatbox.";
+tmpDef.returnType = "int";
+tmpDef.args = [""];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Client;
+exports.ClientDefinitions.push(tmpDef);
+
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "setChatboxCharacterLimit";
+tmpDef.description = "Sets the maximum amount of characters that can be input via chatbox.";
+tmpDef.returnType = "bool";
+tmpDef.args = ["int charLimit"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Client;
+exports.ClientDefinitions.push(tmpDef);
+
 //# sourceMappingURL=client.js.map

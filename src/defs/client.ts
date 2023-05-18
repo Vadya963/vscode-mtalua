@@ -2395,3 +2395,30 @@ tmpDef.args = ["element theElement"];
 tmpDef.argDescs = {};
 tmpDef.scriptSide = ScriptSide.Client;
 ClientDefinitions.push(tmpDef);
+
+tmpDef = new MTAFunction;
+tmpDef.label = "isMTAWindowFocused";
+tmpDef.description = "This function returns whether the MTA window is focused or not.";
+tmpDef.returnType = "bool";
+tmpDef.args = [""];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = ScriptSide.Client;
+ClientDefinitions.push(tmpDef);
+
+tmpDef = new MTAFunction;
+tmpDef.label = "getChatboxCharacterLimit";
+tmpDef.description = "Gets the current maximum amount of characters that can be input via chatbox.";
+tmpDef.returnType = "int";
+tmpDef.args = [""];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = ScriptSide.Client;
+ClientDefinitions.push(tmpDef);
+
+tmpDef = new MTAFunction;
+tmpDef.label = "setChatboxCharacterLimit";
+tmpDef.description = "Sets the maximum amount of characters that can be input via chatbox.";
+tmpDef.returnType = "bool";
+tmpDef.args = ["int charLimit"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = ScriptSide.Client;
+ClientDefinitions.push(tmpDef);
