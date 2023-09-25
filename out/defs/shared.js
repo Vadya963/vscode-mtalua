@@ -4145,6 +4145,33 @@ tmpDef.argDescs = {};
 tmpDef.scriptSide = defs_1.ScriptSide.Shared;
 exports.SharedDefinitions.push(tmpDef);
 
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "getAllElementData";
+tmpDef.description = "Returns a table of all element data of an element.";
+tmpDef.returnType = "table";
+tmpDef.args = ["element theElement"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Shared;
+exports.SharedDefinitions.push(tmpDef);
+
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "isObjectBreakable";
+tmpDef.description = "This function checks if an object is breakable.";
+tmpDef.returnType = "bool";
+tmpDef.args = ["object theObject / int modelId"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Shared;
+exports.SharedDefinitions.push(tmpDef);
+
+tmpDef = new defs_1.MTAFunction;
+tmpDef.label = "setObjectBreakable";
+tmpDef.description = "This function sets an object to be breakable/unbreakable.";
+tmpDef.returnType = "bool";
+tmpDef.args = ["object theObject", "bool breakable"];
+tmpDef.argDescs = {};
+tmpDef.scriptSide = defs_1.ScriptSide.Shared;
+exports.SharedDefinitions.push(tmpDef);
+
 var tmpModuleDef = new defs_1.LuaClass("utf8", "");
 tmpModuleDef.methods.push(new defs_1.LuaMethod("title", "", [], {}, ""));
 tmpModuleDef.methods.push(new defs_1.LuaMethod("width", "", [], {}, ""));

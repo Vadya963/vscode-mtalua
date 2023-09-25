@@ -1239,26 +1239,8 @@ tmpDef.scriptSide = ScriptSide.Client;
 ClientDefinitions.push(tmpDef);
 
 tmpDef = new MTAFunction;
-tmpDef.label = "setObjectBreakable";
-tmpDef.description = "This function sets an object to be breakable/unbreakable.";
-tmpDef.returnType = "bool";
-tmpDef.args = ["object theObject", "bool breakable"];
-tmpDef.argDescs = {};
-tmpDef.scriptSide = ScriptSide.Client;
-ClientDefinitions.push(tmpDef);
-
-tmpDef = new MTAFunction;
 tmpDef.label = "breakObject";
 tmpDef.description = "This function breaks a specific object.";
-tmpDef.returnType = "bool";
-tmpDef.args = ["object theObject"];
-tmpDef.argDescs = {};
-tmpDef.scriptSide = ScriptSide.Client;
-ClientDefinitions.push(tmpDef);
-
-tmpDef = new MTAFunction;
-tmpDef.label = "isObjectBreakable";
-tmpDef.description = "This function checks if an object is breakable.";
 tmpDef.returnType = "bool";
 tmpDef.args = ["object theObject"];
 tmpDef.argDescs = {};
@@ -1491,8 +1473,8 @@ tmpDef.scriptSide = ScriptSide.Client;
 ClientDefinitions.push(tmpDef);
 
 tmpDef = new MTAFunction;
-tmpDef.label = "getCameraShakeLevel";
-tmpDef.description = "This function gets the camera shake level set by setCameraShakeLevel.";
+tmpDef.label = "getCameraDrunkLevel";
+tmpDef.description = "This function gets the camera shake level set by setCameraDrunkLevel.";
 tmpDef.returnType = "int";
 tmpDef.args = [""];
 tmpDef.argDescs = {};
@@ -1527,7 +1509,7 @@ tmpDef.scriptSide = ScriptSide.Client;
 ClientDefinitions.push(tmpDef);
 
 tmpDef = new MTAFunction;
-tmpDef.label = "setCameraShakeLevel";
+tmpDef.label = "setCameraDrunkLevel";
 tmpDef.description = "This function sets the camera shake level (as seen on the Are you going to San Fierro? singleplayer mission).";
 tmpDef.returnType = "bool";
 tmpDef.args = ["int shakeLevel"];

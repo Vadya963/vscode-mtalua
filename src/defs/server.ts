@@ -716,15 +716,6 @@ tmpDef.scriptSide = ScriptSide.Server;
 ServerDefinitions.push(tmpDef);
 
 tmpDef = new MTAFunction;
-tmpDef.label = "getAllElementData";
-tmpDef.description = "Returns a table of all element data of an element.";
-tmpDef.returnType = "table";
-tmpDef.args = ["element theElement"];
-tmpDef.argDescs = {};
-tmpDef.scriptSide = ScriptSide.Server;
-ServerDefinitions.push(tmpDef);
-
-tmpDef = new MTAFunction;
 tmpDef.label = "getElementByIndex";
 tmpDef.description = "This function returns an element of the specified type with the specified index.";
 tmpDef.returnType = "element";
